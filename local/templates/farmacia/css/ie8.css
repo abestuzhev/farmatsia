@@ -1,0 +1,24 @@
+.catalog-list .catalog-item {
+    float: left;
+}
+
+.arrow-select {
+    background: url(../images/sp-arrows.png) 0 0 no-repeat;
+    vertical-align: middle;
+}
+
+.catalog-list .catalog-item {
+    border: 1px solid #b0b0b0;
+    position: relative;
+}
+
+aside .offers .offer-title {
+    background-color: white;
+    /*i.kyrkalov*/
+    /*opacity:77;*/
+    filter: alpha(opacity=77);
+}
+
+a.green-plus {
+    opacity: 1.2;
+}

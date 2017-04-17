@@ -1,0 +1,122 @@
+/*правки в выпадающем список городов в шапке сайта*/
+.towns-submenu {
+    width: 195px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    padding: 12px 0px 9px;
+}
+
+.towns-submenu li {
+    margin: 0 0 0 19px;
+    padding: 0;
+    /*убираем padding*/
+}
+
+.towns-submenu li+li {
+    padding: 0;
+}
+
+/*добавление иконки в левом сайдбаре*/
+.left-menu .menu-title span.ico-lk {
+    display: block;
+    background: url('local/templates/farmacia/images/ico-lk.png') no-repeat 0 0;
+    width: 68px;
+    height: 61px;
+    position: absolute;
+    z-index: 10;
+    top: -23px;
+    left: -18px;
+}
+
+/*стили инпутов и тексареи*/
+
+
+
+.apply {
+
+}
+
+.apply_item {
+    margin-bottom: 8px;
+    border: 1px solid #b2b2b2;
+    padding: 8px 15px;
+    position: relative;
+    background-color: #fff;
+    font: 14px/1.2 Arial, Tahoma, Verdana, sans-serif;
+    color: #2b2b2b;
+    border-radius: 1px;
+}
+
+.apply .select-holder {
+    margin-bottom: 8px;
+}
+
+button.cselect .select-text {
+    padding: 8px 25px 8px 8px;
+}
+
+.apply_item label {
+
+}
+
+.apply .apply_field {
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 65%;
+}
+
+.apply_textarea {
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 100%;
+}
+
+/*загрузка файлов*/
+.apply-upload {
+
+}
+
+.imageuploadify .imageuploadify-images-list span.imageuploadify-message {
+    color: #585858;
+    border-top-color: #585858;
+    border-bottom-color: #585858;
+}
+
+.imageuploadify {
+    min-height: auto;
+}
+
+.imageuploadify .imageuploadify-images-list button.btn-default {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.imageuploadify .imageuploadify-images-list .imageuploadify-container {
+    margin-top: 14px;
+}
+
+.apply-upload {
+    margin-bottom: 16px;
+}
+
+/*.apply_select {*/
+    /*width: 100%;*/
+/*}*/
+
+.c-form_button {
+    width: 100%;
+    background-color: #3D987B;
+    border-radius: 6px;
+    color: #FFF;
+    font-family: "Calibri", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.change-subject
