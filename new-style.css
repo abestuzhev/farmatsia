@@ -84,7 +84,7 @@ button.cselect .select-text {
 }
 
 .imageuploadify {
-    min-height: auto;
+    min-height: 0;
 }
 
 .imageuploadify .imageuploadify-images-list button.btn-default {
@@ -119,4 +119,118 @@ button.cselect .select-text {
     outline: none;
 }
 
-.change-subject
+
+/*application (стория заявок)*/
+.application {
+    font-family: "Calibri", sans-serif;
+    color: #626262;
+}
+
+.application-item {
+    margin-bottom: 13px;
+    overflow: hidden;
+    border: 1px solid #E9E9E9;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.application-item--active {
+    box-sizing: border-box;
+    background-color: #FFF;
+    border: 1px solid #E9E9E9;
+    box-shadow: 2px 3.5px 6px rgba(0, 0, 0, 0.1);
+}
+
+.application-item--active .application-item_header {
+    background-color: #fff;
+}
+
+
+.application-item_header {
+    position: relative;
+    z-index: 2;
+    padding: 10px 14px;
+    background-color: #F6F6F6;
+    cursor: pointer;
+}
+
+.application-item_title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.application-item_number {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.application-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 16px;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.application-item_body {
+    padding: 14px 14px 10px;
+    display: none;
+    -webkit-transform: translateY(-500px);
+    -ms-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.application_info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.application_info-item {
+    color: #2D2D2D;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.application-item--active .application-icon {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.application-item--active .application-item_body {
+
+    display: block;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
