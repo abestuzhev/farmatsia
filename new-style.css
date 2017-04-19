@@ -67,6 +67,10 @@
 /*стили инпутов и тексареи*/
 
 
+textarea::-webkit-textarea-placeholder {color:#000;}
+textarea::-moz-placeholder          {color:#000;}/* Firefox 19+ */
+textarea:-moz-placeholder           {color:#000;}/* Firefox 18- */
+textarea:-ms-textarea-placeholder      {color:#000;}
 
 .apply {
 
@@ -107,6 +111,7 @@ button.cselect .select-text {
     outline: none;
     padding: 0;
     width: 100%;
+    color: #2b2b2b;
 }
 
 /*загрузка файлов*/
