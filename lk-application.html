@@ -33,6 +33,7 @@
 
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="local/templates/farmacia/js/imageuploadify.min.js"></script>
+    <script src="local/templates/farmacia/js/jquery.mask.min.js"></script>
     <script src="local/templates/farmacia/js/new-main.js"></script>
     <link href="new-style.css" type="text/css" data-template-style="true" rel="stylesheet"/>
     <!--end new style-->
@@ -290,7 +291,7 @@
             <!--<div class="main-content clearfix">-->
             <div class="main-content">
 
-                <form action="" class="apply">
+                <form action="#" class="apply">
                     <div class="apply_item">
                         <label for="pharmacies-number">*№ Аптеки:</label>
                         <input type="text" class="apply_field" id="pharmacies-number">
@@ -331,7 +332,7 @@
                         <!--<div class="apply-upload_title">Прикрепить фотографии:</div>-->
                         <input type="file" accept=".xlsx,.xls,image/*,.doc,audio/*,.docx,video/*,.ppt,.pptx,.txt,.pdf" multiple>
                     </div>
-                    <input type="button" class="c-form_button" value="Отправить заявку">
+                    <button class="c-form_button js-apply_button" >Отправить заявку</button>
                 </form>
 
             </div>

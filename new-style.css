@@ -62,7 +62,7 @@ button.cselect .select-text {
     border: none;
     outline: none;
     padding: 0;
-    width: 65%;
+    width: 64%;
 }
 
 .apply_textarea {
@@ -90,11 +90,20 @@ button.cselect .select-text {
 .imageuploadify .imageuploadify-images-list button.btn-default {
     border-radius: 0;
     margin-bottom: 0;
+    color: #3D987B !important;
+    border-color: #3D987B !important;
+}
+
+.imageuploadify .imageuploadify-images-list button.btn-default:hover {
+    background-color: #3D987B !important;
+    color: #fff !important;
+    border-color: #3D987B !important;
 }
 
 .imageuploadify .imageuploadify-images-list .imageuploadify-container {
     margin-top: 14px;
 }
+
 
 .apply-upload {
     margin-bottom: 16px;
