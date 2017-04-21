@@ -67,10 +67,11 @@
 /*стили инпутов и тексареи*/
 
 
-textarea::-webkit-textarea-placeholder {color:#000;}
+textarea::-webkit-input-placeholder {color:#000;}
 textarea::-moz-placeholder          {color:#000;}/* Firefox 19+ */
 textarea:-moz-placeholder           {color:#000;}/* Firefox 18- */
-textarea:-ms-textarea-placeholder      {color:#000;}
+textarea:-ms-input-placeholder      {color:#000;}
+
 
 .apply {
 
@@ -185,12 +186,27 @@ button.cselect .select-text {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 11px;
     text-align: center;
     border: none;
     outline: none;
 }
 
+.c-form_button-icon {
+  margin-right: 8px;
+}
+
+.c-form_button--auto {
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.c-form_button--auto {
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 /*application (стория заявок)*/
 .application {
@@ -305,4 +321,99 @@ button.cselect .select-text {
     -ms-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out;
+}
+
+/*guest-book*/
+
+.guest-book * {
+  box-sizing: border-box;
+}
+
+.guest-book_header {
+  margin-bottom: 20px;
+}
+
+.guest-book_header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.guest-book_icon {
+  float: left;
+}
+
+.guest-book_title {
+  margin-left: 60px;
+  font-weight: 700;
+  font-size: 21px;
+  vertical-align: top;
+  line-height: .9;
+  margin-bottom: 2px;
+}
+
+.guest-book_subtitle {
+  margin-left: 60px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.guest-book .guest-book_field::-webkit-input-placeholder {color:#3a3a3a;}
+.guest-book .guest-book_field::-moz-placeholder          {color:#3a3a3a;}/* Firefox 19+ */
+.guest-book .guest-book_field:-moz-placeholder           {color:#3a3a3a;}/* Firefox 18- */
+.guest-book .guest-book_field:-ms-input-placeholder      {color:#3a3a3a;}
+
+.guest-book_item {
+  margin-bottom: 10px;
+
+}
+
+.guest-book .guest-book_field {
+  width: 100%;
+  display: block;
+  border: 1px solid #b2b2b2;
+  padding: 8px 15px;
+  position: relative;
+  background-color: #fff;
+  font: 14px/1.2 Arial, Tahoma, Verdana, sans-serif;
+  color: #2b2b2b;
+  border-radius: 1px;
+}
+
+
+.guest-book .guest-book_textarea {
+  width: 100%;
+  padding: 9px 15px;
+  font: 14px/1.2 Arial, Tahoma, Verdana, sans-serif;
+  margin-bottom: 7px;
+}
+
+.guest-book_btn {
+  display: inline-block;
+  background-color: #3e987c;
+}
+
+/*new slide*/
+aside .offers .offer-title span.ico-guest {
+    display: inline-block;
+    background: url('local/templates/farmacia/images/icon-guest-grey.png') 0 0 no-repeat;
+    width: 30px;
+    height: 23px;
+    margin-right: 8px;
+    margin-top: 21px;
+    margin-left: 6px;
+}
+
+/*sent_message*/
+.sent_message {
+  display: none;
+}
+
+.sent_message_title {
+  color: #3D987B;
+  font-family: "Calibri", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-transform: uppercase;
 }

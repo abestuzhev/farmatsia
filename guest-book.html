@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>О нас</title>
+    <title>Книга отзывов и предложений</title>
     <meta charset="UTF-8">
     <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
 
@@ -25,6 +25,7 @@
     <meta name="description" content="Администрация государственного унитарного предприятия Архангельской   области «Фармация»"/>
 
     <!--style-->
+    <link href="grid.css" type="text/css" data-template-style="true" rel="stylesheet"/>
     <link href="style-templates.css" type="text/css" data-template-style="true" rel="stylesheet"/>
     <!--new style 16.04.2017-->
     <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
@@ -276,26 +277,39 @@
         <!-- max-wrap -->
         <div class="max-wrap">
 
-          <form action="#" class="guest-book">
-            <div class="row">
-              <div class="guest-book_item col-md-4">
-                <input type="text" class="guest-boo_field" id="guest-book_name" placeholder="ФИО">
-              </div>
-              <div class="guest-book_item col-md-4">
-                <input type="text" class="guest-boo_field" id="guest-book_phone" placeholder="Тел: +7(___)___-__-__">
-              </div>
-              <div class="guest-book_item col-md-4">
-                <input type="text" class="guest-boo_field" id="guest-book_email" placeholder="*Email">
-              </div>
-            </div><!--end row -->
-            <div class="row">
-              <div class="col-md-6"></div>
-              <div class="col-md-6"></div>
-            </div><!--end row -->
-            <div class="row">
-              <div class="col-md-12"></div>
-            </div><!--end row -->
-          </div>
+          <div class="guest-book">
+            <div class="guest-book_header">
+              <div class="guest-book_icon"><img src="local/templates/farmacia/images/icon-guest.png" alt=""></div>
+              <div class="guest-book_title">Книга отзывов и предолжений</div>
+              <div class="guest-book_subtitle">Поля заполненные * обязательные для заполнения</div>
+            </div>
+
+            <form action="#" class="guest-book_form">
+              <div class="row">
+                <div class="guest-book_item col-md-4">
+                  <input type="text" class="guest-book_field" id="guest-book_name" placeholder="ФИО">
+                </div>
+                <div class="guest-book_item col-md-4">
+                  <input type="text" class="guest-book_field" id="guest-book_phone" placeholder="Тел: +7(___)___-__-__">
+                </div>
+                <div class="guest-book_item col-md-4">
+                  <input type="text" class="guest-book_field" id="guest-book_email" placeholder="*Email">
+                </div>
+              </div><!--end row -->
+              <div class="row">
+                <div class="guest-book_item col-md-6"><input type="text" class="guest-book_field" id="guest-book_city" placeholder="Населенный пункт"></div>
+                <div class="guest-book_item col-md-6"><input type="text" class="guest-book_field" id="guest-book_address" placeholder="Адрес аптеки"></div>
+              </div><!--end row -->
+              <div class="row">
+                <div class="guest-book_item col-md-12">
+                  <textarea name="guest-book_message"  class="guest-book_textarea" id="" cols="0" rows="6" placeholder="Комментарий:"></textarea>
+                </div>
+              </div><!--end row -->
+
+              <button class="c-form_button c-form_button--auto js-apply_button"><img class="c-form_button-icon" src="local/templates/farmacia/images/icon-email.png" alt="">Отправить</button>
+            </form>
+
+          </div><!-- end guest-book -->
 
         </div>
         <!-- end max-wrap -->
@@ -345,6 +359,25 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- new slide -->
+                <div class="offersSlider">
+                    <div class="bxslider">
+                        <div class="item" id="bx_3218110189_326">
+                            <a href="http://aptekaf.ru/mamina-apteka/">
+                                <div class="offer-img">
+                                    <img src="local/templates/farmacia/images/upload/guest-img.jpg" alt="">
+                                </div>
+                                <div class="offer-title">
+                                    <span class="ico-guest icons"></span>
+                                    <p><span style="font-size: 13.3333px;">Книга отзывов<br>и предложений</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end new slide -->
+
                 <div class="offersSlider">
                     <div class="bxslider">
                         <div class="item" id="bx_3218110189_327">
