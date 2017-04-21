@@ -72,6 +72,10 @@ textarea::-moz-placeholder          {color:#000;}/* Firefox 19+ */
 textarea:-moz-placeholder           {color:#000;}/* Firefox 18- */
 textarea:-ms-input-placeholder      {color:#000;}
 
+.content form input[disabled] {
+  border-color: #b2b2b2;
+  background-color: #efefef;
+}
 
 .apply {
 

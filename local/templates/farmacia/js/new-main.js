@@ -42,6 +42,20 @@
 
     };// sendFullForm
 
+    function addDisabled (inputChange, inputDisabled){
+      inputChange.on('change', function(){
+        var val = $(this).val();
+        if(val.length > 0){
+          inputDisabled.attr('disabled','disabled');
+        }else if(val.length == 0){
+          inputDisabled.removeAttr('disabled');
+        }
+      })
+    }
+
+    addDisabled(  $('#guest-book_phone'), $("#guest-book_email"));
+    addDisabled(  $("#guest-book_email"), $('#guest-book_phone'));
+
 
 
     // mask
