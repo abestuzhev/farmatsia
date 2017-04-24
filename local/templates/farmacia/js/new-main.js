@@ -8,13 +8,12 @@
     });
 
 
-    $('.js-apply_button').click(function (e) {
+    $('.js-apply_button--apply').click(function (e) {
         e.preventDefault();
-        sendFullForm();
+        sendFullFormApply();
     });
 
-    function sendFullForm() {
-
+    function sendFullFormApply() {
       function checkLabel (input){
         var val = input.val();
         if (val.length <= 0 || val.length >= 50) {
@@ -24,37 +23,73 @@
           $(input).siblings('label').css("color", "inherit");
         }
       } // checkNames
+      checkLabel($('#pharmacies-number'));
+      checkLabel($('#apply-user'));
+      checkLabel($('#apply-phone-number'));
+    };// sendFullForm
 
+
+    $('.js-apply_button--guest').click(function (e) {
+        e.preventDefault();
+        sendFullFormGuest();
+    });
+
+    function sendFullFormGuest() {
       function checkBorder (input){
         var val = input.val();
         if (val.length <= 0 || val.length >= 50) {
             $(input).css("border-color", "#CB3631");
-            resultat = false;
+            // resultat = false;
         } else {
-          $(input).css("border-color", "inherit");;
+          $(input).css("border-color", "#b2b2b2");
         }
       } // checkBorder
 
-      checkLabel($('#pharmacies-number'));
-      checkLabel($('#apply-user'));
-      checkLabel($('#apply-phone-number'));
-      checkBorder($('#guest-book_email'));
+      var $guestBookPhone = $('#guest-book_phone');
 
-    };// sendFullForm
 
-    function addDisabled (inputChange, inputDisabled){
-      inputChange.on('change', function(){
+      //изменения инпутов телефон и email
+      $guestBookPhone.on('change', function(){
         var val = $(this).val();
-        if(val.length > 0){
-          inputDisabled.attr('disabled','disabled');
-        }else if(val.length == 0){
-          inputDisabled.removeAttr('disabled');
+        if (val.length <= 0 || val.length >= 50) {
+            $(this).css("border-color", "#CB3631");
+        } else {
+          $(this).css("border-color", "#b2b2b2");
+          $('#guest-book_email').css("border-color", "#b2b2b2");
         }
-      })
+      });
+
+      if($guestBookPhone.val() <= 0) {
+        checkBorder($('#guest-book_email'));
+      }
+
+      // $('#guest-book_email').on('change', function(){
+      //   checkBorder($('#guest-book_email'));
+      //   $('#guest-book_phone').css("border-color", "inherit !important");
+      // });
+
+
+      // checkBorder($('#guest-book_phone'));
     }
 
-    addDisabled(  $('#guest-book_phone'), $("#guest-book_email"));
-    addDisabled(  $("#guest-book_email"), $('#guest-book_phone'));
+
+
+
+    // function addDisabled (inputChange, inputDisabled){
+    //   inputChange.on('change', function(){
+    //     var val = $(this).val();
+    //     if(val.length > 0){
+    //       inputDisabled.attr('disabled','disabled');
+    //     }else if(val.length == 0){
+    //       inputDisabled.removeAttr('disabled');
+    //     }
+    //   })
+    // }
+
+
+
+    // addDisabled(  $('#guest-book_phone'), $("#guest-book_email"));
+    // addDisabled(  $("#guest-book_email"), $('#guest-book_phone'));
 
 
 

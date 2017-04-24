@@ -287,18 +287,18 @@
             <form action="#" class="guest-book_form">
               <div class="row">
                 <div class="guest-book_item col-md-4">
-                  <input type="text" class="guest-book_field" id="guest-book_name" placeholder="ФИО">
+                  <input name="guest-book_name" type="text" class="guest-book_field" id="guest-book_name" placeholder="ФИО">
                 </div>
                 <div class="guest-book_item col-md-4">
-                  <input type="text" class="guest-book_field" id="guest-book_phone" placeholder="Тел: +7(___)___-__-__">
+                  <input name="guest-book_phone" type="text" class="guest-book_field" id="guest-book_phone" placeholder="Тел: +7(___)___-__-__">
                 </div>
                 <div class="guest-book_item col-md-4">
-                  <input type="text" class="guest-book_field" id="guest-book_email" placeholder="*Email">
+                  <input name="guest-book_email" type="text" class="guest-book_field" id="guest-book_email" placeholder="*Email">
                 </div>
               </div><!--end row -->
               <div class="row">
-                <div class="guest-book_item col-md-6"><input type="text" class="guest-book_field" id="guest-book_city" placeholder="Населенный пункт"></div>
-                <div class="guest-book_item col-md-6"><input type="text" class="guest-book_field" id="guest-book_address" placeholder="Адрес аптеки"></div>
+                <div name="guest-book_city" class="guest-book_item col-md-6"><input type="text" class="guest-book_field" id="guest-book_city" placeholder="Населенный пункт"></div>
+                <div name="guest-book_address" class="guest-book_item col-md-6"><input type="text" class="guest-book_field" id="guest-book_address" placeholder="Адрес аптеки"></div>
               </div><!--end row -->
               <div class="row">
                 <div class="guest-book_item col-md-12">
@@ -306,7 +306,7 @@
                 </div>
               </div><!--end row -->
 
-              <button class="c-form_button c-form_button--auto js-apply_button"><img class="c-form_button-icon" src="local/templates/farmacia/images/icon-email.png" alt="">Отправить</button>
+              <button class="c-form_button c-form_button--auto js-apply_button--guest"><img class="c-form_button-icon" src="local/templates/farmacia/images/icon-email.png" alt="">Отправить</button>
             </form>
 
           </div><!-- end guest-book -->
