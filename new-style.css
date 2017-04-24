@@ -65,8 +65,6 @@
 }
 
 /*стили инпутов и тексареи*/
-
-
 textarea::-webkit-input-placeholder {color:#000;}
 textarea::-moz-placeholder          {color:#000;}/* Firefox 19+ */
 textarea:-moz-placeholder           {color:#000;}/* Firefox 18- */
@@ -75,10 +73,6 @@ textarea:-ms-input-placeholder      {color:#000;}
 .content form input[disabled] {
   border-color: #b2b2b2;
   background-color: #efefef;
-}
-
-.apply {
-
 }
 
 .apply_item {
@@ -117,11 +111,6 @@ button.cselect .select-text {
     padding: 0;
     width: 100%;
     color: #2b2b2b;
-}
-
-/*загрузка файлов*/
-.apply-upload {
-
 }
 
 .imageuploadify .imageuploadify-images-list span.imageuploadify-message {
@@ -177,10 +166,6 @@ button.cselect .select-text {
     margin-bottom: 16px;
 }
 
-/*.apply_select {*/
-    /*width: 100%;*/
-/*}*/
-
 .c-form_button {
     width: 100%;
     background-color: #3D987B;
@@ -212,7 +197,7 @@ button.cselect .select-text {
   margin: 0 auto;
 }
 
-/*application (стория заявок)*/
+/*application (bстория заявок)*/
 .application {
     font-family: "Calibri", sans-serif;
     color: #626262;
@@ -301,6 +286,7 @@ button.cselect .select-text {
     font-weight: 400;
     margin-bottom: 10px;
 }
+
 .application-item--active .application-icon {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -406,11 +392,6 @@ aside .offers .offer-title span.ico-guest {
     margin-right: 8px;
     margin-top: 21px;
     margin-left: 6px;
-}
-
-/*sent_message*/
-.sent_message {
-  display: none;
 }
 
 .sent_message_title {
