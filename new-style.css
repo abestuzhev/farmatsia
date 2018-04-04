@@ -402,3 +402,71 @@ aside .offers .offer-title span.ico-guest {
   margin-bottom: 16px;
   text-transform: uppercase;
 }
+
+
+/*выпадающее меню*/
+.main-menu-wrap .main-menu .main-menu-item a {
+    position: relative;
+}
+
+.main-submenu {
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 999;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    padding: 33px 0 18px;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+    display: none;
+}
+
+.main-submenu::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid transparent;
+    border-bottom: 7px solid #000;
+}
+
+.main-submenu-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 18px;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+.main-submenu-item:last-child {
+    border-bottom: none;
+}
+
+.main-submenu-item:hover {
+    background-color: #cb3631;
+}
+.main-menu-wrap .main-submenu .main-submenu-item:hover a {
+    color: #ffffff;
+}
+
+.main-menu-wrap .main-submenu .main-submenu-item a {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.main-menu-wrap .main-menu .main-menu-item a:after {
+    content: '';
+    display: none;
+}
+
+.main-menu-item-inner:hover .main-submenu {
+    display: block;
+}
